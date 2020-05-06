@@ -30,21 +30,23 @@ For a general introduction, please read this [blog posting](https://jeffkreeftme
 It is recommended to use this repository with Linux or macOS.
 Windows may work, but is generally not supported.
 
+    $ npm install
+
 ## Development
 
 This repository uses [VuePress](https://vuepress.vuejs.org/).
 To start a local development server:
 
-    $ yarn docs:dev
+    $ npm run docs:dev
 
 ## Build
 
 To build the static site:
 
-    $ yarn docs:build
+    $ npm run docs:build
 
 ## Publish
 
 To publish the site to base32check.org:
 
-    $ yarn docs:deploy
+    $ npm run docs:deploy
