@@ -4,9 +4,9 @@ This project provides sample implementations of the Base32 data encoding as spec
 [RFC 4648, section 6](https://tools.ietf.org/html/rfc4648#section-6), and a corresponding checksum algorithm, called
 _base32check1_, in various programming languages.
 
-base32check1 is a custom, one-digit checksum algorithm with the following properties:
+base32check1 is a custom, one-digit checksum algorithm which meets the following requirements:
 
-100% detection of... | Example
+detection of... | Example
 :--- | :---
 single character substitution | `..A..` &rarr; `..B..`
 character transposition with zero characters in between them | `..AB..` &rarr; `..BA..`
@@ -24,6 +24,6 @@ on April, 2004.
 
 Part of the base32check1 algorithm is a [primitive polynomial](http://mathworld.wolfram.com/PrimitivePolynomial.html).
 We have selected the primitive polynomial to be 1 + x + x<sup>3</sup> + x<sup>4</sup> + x<sup>5</sup>.
-As a consequence, the checksum computed by our various implementations is different from the one computed in the
-[original Javascript implementation](https://github.com/espadrine/base32check) of Thaddée Tyl, where the primitive
+As a consequence, the checksum computed by our various implementations is different from the one computed by the
+[original Javascript implementation](https://github.com/espadrine/base32check) from Thaddée Tyl, where the primitive
 polynomial is 1 + x<sup>2</sup> + x<sup>5</sup>.
