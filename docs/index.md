@@ -1,4 +1,6 @@
-This project provides sample implementations of the Base32 data encoding as specified in
+# About
+
+This project provides open source implementations of the Base32 data encoding as specified in
 [RFC 4648, section 6](https://tools.ietf.org/html/rfc4648#section-6), and a corresponding checksum algorithm, called
 _Base32Check1_, in various programming languages.
 
@@ -12,16 +14,18 @@ The algorithm also consists of some
 on April, 2004.
 
 According to the article on Springer, the algorithm reliably detects the following errors, which together account for
-more than 90% of the most frequent transmission errors according to statistical analysis which has been independently
-conducted by D.F. Beckley and J. Verhoeff:
+more than 90% of the most frequent transmission errors according to statistical analysis independently conducted by
+D.F. Beckley and J. Verhoeff:
 
 Error | Example
-:--- | :---
+--- | ---
 single character substitution | `..A..` &rarr; `..B..`
 character transposition with zero characters in between them | `..AB..` &rarr; `..BA..`
 character transposition with one character in between them | `..ABC..` &rarr; `..CBA..`
 identical substitution of two identical characters with zero characters in between them | `..AA..` &rarr; `..BB..`
 identical substitution of two identical characters with one character in between them | `..ACA..` &rarr; `..BCB..`
+
+::: details
 
 Part of the Base32Check1 algorithm is a [primitive polynomial](http://mathworld.wolfram.com/PrimitivePolynomial.html).
 We have chosen this primitive polynomial to be 1 + x + x<sup>3</sup> + x<sup>4</sup> + x<sup>5</sup>, which is 
@@ -30,3 +34,5 @@ As a consequence, the checksums computed by our sample implementations are diffe
 [original Javascript implementation](https://github.com/espadrine/base32check).
 Alongside the sample implementations we also provide test code as evidence that the algorithm's desired properties still
 hold.
+
+:::
