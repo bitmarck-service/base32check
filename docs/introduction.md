@@ -40,7 +40,7 @@ identical substitution of two identical characters with one character in between
 Part of the Base32Check1 algorithm is a [primitive polynomial](http://mathworld.wolfram.com/PrimitivePolynomial.html).
 We have chosen this primitive polynomial to be 1 + x + x<sup>3</sup> + x<sup>4</sup> + x<sup>5</sup>, which is 
 different from the one chosen by Thaddée Tyl, which is 1 + x<sup>2</sup> + x<sup>5</sup>. 
-**As a consequence, the checksums computed by our sample implementations are different from the ones computed by the
+**As a consequence, the checksums computed by our implementations are different from the ones computed by the
 [original Javascript implementation](https://github.com/espadrine/base32check)!**
 Alongside the sample implementations we also provide test code as evidence that the algorithm's desired properties still
 hold.
