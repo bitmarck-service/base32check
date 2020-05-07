@@ -1,25 +1,25 @@
-# For more information see: https://github.com/peaceiris/actions-gh-pages#%EF%B8%8F-static-site-generators-with-nodejs
-
-name: Deploy
+# See https://help.github.com/en/actions/reference/workflow-syntax-for-github-actions
+# and https://github.com/peaceiris/actions-gh-pages#%EF%B8%8F-static-site-generators-with-nodejs :
 
 on:
+  pull_request:
+    branches:
+      - '**'
   push:
     branches:
-      - master
+      - '**'
 
 jobs:
-  deploy:
+  test-and-deploy:
     runs-on: ubuntu-18.04
     steps:
       - uses: actions/checkout@v2
 
-      - name: Setup Node
-        uses: actions/setup-node@v1
+      - uses: actions/setup-node@v1
         with:
           node-version: '12.x'
 
-      - name: Cache dependencies
-        uses: actions/cache@v1
+      - uses: actions/cache@v1
         with:
           path: ~/.npm
           key: ${{ runner.os }}-node-${{ hashFiles('**/package-lock.json') }}
@@ -27,10 +27,11 @@ jobs:
             ${{ runner.os }}-node-
 
       - run: npm ci
+
       - run: npm run docs:build
 
-      - name: Deploy
+      - if: github.ref == 'refs/heads/master'
         uses: peaceiris/actions-gh-pages@v3
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: ./docs/.vuepress/dist
+          publish_dir: docs/.vuepress/dist
