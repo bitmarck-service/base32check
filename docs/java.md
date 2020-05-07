@@ -1,6 +1,6 @@
-<a href="https://github.com/bitmarck-service/base32check-java/releases/latest"><img src="https://img.shields.io/github/release/bitmarck-service/base32check-java.svg?maxAge=3600" alt="Release Notes"></a>
-<a href="https://search.maven.org/artifact/de.bitmarck.bms/base32check-java"><img src="https://img.shields.io/maven-central/v/de.bitmarck.bms/base32check-java?maxAge=3600" alt="Maven Central"></a>
-<a href="https://www.apache.org/licenses/LICENSE-2.0"><img src="https://img.shields.io/github/license/bitmarck-service/base32check-scala.svg?maxAge=3600" alt="Apache License 2.0"></a>
+<a href="https://github.com/bitmarck-service/base32check-java/releases/latest"><img src="https://img.shields.io/github/v/release/bitmarck-service/base32check-java?cacheSeconds=3600" alt="Release Notes"></a>
+<a href="https://search.maven.org/artifact/de.bitmarck.bms/base32check-java"><img src="https://img.shields.io/maven-central/v/de.bitmarck.bms/base32check-java?cacheSeconds=3600" alt="Maven Central"></a>
+<a href="https://www.apache.org/licenses/LICENSE-2.0"><img src="https://img.shields.io/github/license/bitmarck-service/base32check-scala?cacheSeconds=3600" alt="Apache License 2.0"></a>
 
 # Java
 
