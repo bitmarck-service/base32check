@@ -1,5 +1,6 @@
-# base32check
 [![Apache License 2.0](https://img.shields.io/github/license/bitmarck-service/base32check.svg?maxAge=3600)](https://www.apache.org/licenses/LICENSE-2.0)
+
+# base32check
 
 Website for the base32 checksum algorithm.
 
@@ -48,12 +49,6 @@ To build the static site:
 
     $ npm run docs:build
 
-## Publish
+## Deployment
 
-To publish the site to base32check.org:
-
-    $ npm run docs:deploy
-
-## Licensing
-
-This project uses the Apache 2.0 License. See the file called LICENSE.
+Every commit on the master branch gets automatically deployed to [base32check.org](https://base32check.org).
