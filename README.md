@@ -1,4 +1,5 @@
 # base32check
+[![Apache License 2.0](https://img.shields.io/github/license/bitmarck-service/base32check.svg?maxAge=3600)](https://www.apache.org/licenses/LICENSE-2.0)
 
 A base32 checksum algorithm.
 
