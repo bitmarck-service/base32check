@@ -8,6 +8,7 @@ module.exports = {
         repo: 'bitmarck-service/base32check',
         sidebar: [
             '/',
+            'introduction',
             ['java', 'Java'],
             ['scala', 'Scala'],
         ]
