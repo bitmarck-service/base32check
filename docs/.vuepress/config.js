@@ -3,8 +3,8 @@ module.exports = {
     themeConfig: {
         sidebar: [
             '/',
-            'java',
-            'scala',
+            ['java', 'Java'],
+            ['scala', 'Scala'],
         ]
     },
     title: 'Base32Check',
