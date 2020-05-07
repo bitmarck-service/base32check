@@ -3,9 +3,9 @@
     "vuepress": "^1.4.1"
   },
   "license": "Apache-2.0",
+  "repository": "github:bitmarck-service/base32check",
   "scripts": {
     "docs:dev": "vuepress dev docs",
     "docs:build": "vuepress build docs"
-  },
-  "repository": "github:bitmarck-service/base32check"
+  }
 }
