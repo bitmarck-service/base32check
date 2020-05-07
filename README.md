@@ -1,10 +1,8 @@
 [![Apache License 2.0](https://img.shields.io/github/license/bitmarck-service/base32check.svg?maxAge=3600)](https://www.apache.org/licenses/LICENSE-2.0)
 
-# base32check
+# Base32Check Documentation
 
-Website for the base32 checksum algorithm.
-
-https://base32check.org
+This is the source code repository for the documentation website [base32check.org](https://base32check.org).
 
 ## Git Flow
 
@@ -29,7 +27,6 @@ For a general introduction, please read this [blog posting](https://jeffkreeftme
 ## Prerequisites
 
 + [Node.js](https://www.node.js/)
-+ [Yarn](https://yarnpkg.com/)
 
 It is recommended to use this repository with Linux or macOS.
 Windows may work, but is generally not supported.
@@ -51,4 +48,4 @@ To build the static site:
 
 ## Deployment
 
-Every commit on the master branch gets automatically deployed to [base32check.org](https://base32check.org).
+Every commit on the master branch gets automatically deployed to the website.
