@@ -53,3 +53,7 @@ To build the static site:
 To publish the site to base32check.org:
 
     $ npm run docs:deploy
+
+## Licensing
+
+This project uses the Apache 2.0 License. See the file called LICENSE.
