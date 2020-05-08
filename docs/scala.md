@@ -18,10 +18,10 @@
 Assuming you use [SBT](https://www.scala-sbt.org), add the following library dependency:
 
 ``` scala
-libraryDependencies += "de.bitmarck.bms" %% "base32check-scala" % "0.0.1"
+libraryDependencies += "de.bitmarck.bms" %% "base32check-scala" % "0.0.2"
 ```
 
-We provide artifacts for Scala 2.11, 2.12 and 2.13.
+We provide artifacts for Scala 2.10, 2.11, 2.12 and 2.13.
 
 ## Codec
 
