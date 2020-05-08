@@ -9,8 +9,8 @@ module.exports = {
         sidebar: [
             '/',
             'introduction',
-            ['java', 'Tutorial for Java'],
-            ['scala', 'Tutorial for Scala'],
+            ['java', 'Java Guide'],
+            ['scala', 'Scala Guide'],
         ]
     },
     title: 'Base32Check',
