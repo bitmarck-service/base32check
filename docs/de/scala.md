@@ -11,17 +11,17 @@
     </div>
 </div>
 
-# Scala Guide
+# Scala-Leitfaden
 
-## Dependency
+## Abhängigkeiten
 
-Assuming you use [SBT](https://www.scala-sbt.org), add the following library dependency:
+Wenn Sie [SBT](https://www.scala-sbt.org) benutzen, fügen Sie folgende Bibliothek als Abhängigkeit hinzu:
 
 ``` scala
 libraryDependencies += "de.bitmarck.bms" %% "base32check-scala" % "0.0.2"
 ```
 
-This library supports Scala 2.10, 2.11, 2.12 and 2.13.
+Diese Bibliothek unterstützt Scala 2.10, 2.11, 2.12 und 2.13.
 
 ## Codec
 

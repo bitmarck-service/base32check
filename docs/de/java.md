@@ -11,11 +11,11 @@
     </div>
 </div>
 
-# Java Guide
+# Java-Leitfaden
 
-## Dependency
+## Abhängigkeiten
 
-Assuming you use [Apache Maven](http://maven.apache.org), add the following library dependency:
+Wenn Sie [Apache Maven](http://maven.apache.org) nutzen, fügen Sie folgende Bibliothek als Abhängigkeit hinzu:
 
 ```xml
 <dependency>
@@ -25,7 +25,7 @@ Assuming you use [Apache Maven](http://maven.apache.org), add the following libr
 </dependency>
 ```
 
-This library requires Java 1.8 as a minimum requirement.
+Diese Bibliothek benötigt Java 1.8 als Mindestvoraussetzung.
 
 ## Codec
 
@@ -38,7 +38,7 @@ var copy = Base32.decode(base32);
 assert Arrays.equals(copy, bytes);
 ```
 
-## Checksum
+## Prüfsumme
 
 ```java
 import de.bitmarck.bms.base32.Base32Check1;
