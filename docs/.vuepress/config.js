@@ -21,6 +21,7 @@ module.exports = {
                 selectText: 'Sprachen',
                 sidebar: [
                     '/de/introduction',
+                    '/de/samples',
                     ['/de/java', 'Java-Leitfaden'],
                     ['/de/scala', 'Scala-Leitfaden'],
                 ]
@@ -32,6 +33,7 @@ module.exports = {
         repo: 'bitmarck-service/base32check',
         sidebar: [
             '/introduction',
+            '/samples',
             ['/java', 'Java Guide'],
             ['/scala', 'Scala Guide'],
         ]
