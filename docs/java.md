@@ -32,9 +32,9 @@ This library requires Java 1.8 as a minimum requirement.
 ```java
 import de.bitmarck.bms.base32.Base32;
 
-var bytes = "Hello world!".getBytes();
-var base32 = Base32.encode(bytes);
-var copy = Base32.decode(base32);
+byte[] bytes = "Hello world!".getBytes();
+char base32 = Base32.encode(bytes);
+byte[] copy = Base32.decode(base32);
 assert Arrays.equals(copy, bytes);
 ```
 
@@ -43,7 +43,7 @@ assert Arrays.equals(copy, bytes);
 ```java
 import de.bitmarck.bms.base32.Base32Check1;
 
-var string = "ABCDEFGHIJKLMNOPQRSTUVWXYZ234567";
-var checksum = Base32Check1.compute(string);
-assert Base32Check1.validate(string + checksum);
+String string = "ABCDEFGHIJKLMNOPQRSTUVWXYZ234567";
+char checksum = Base32Check1.getInstance().compute(string);
+assert Base32Check1.getInstance().validate(string + checksum);
 ```
